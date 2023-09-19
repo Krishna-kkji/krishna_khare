@@ -1,6 +1,6 @@
 
 body {
-    font-family:Italic;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #292727;
     margin: 0;
     padding: 0;
@@ -28,7 +28,8 @@ header {
 }
 
 .blinking-text {
-    animation: blink 3s infinite;
+    animation: blink 3s infinite; /* Blinking animation with a 1-second duration */
+}
 
 header h4{
     color: #f0fd5b;
@@ -77,7 +78,7 @@ nav a {
 }
 
 nav a:hover{
-    color: #fbff29;
+    color: #fbff29; /* Change to a highlight color on hover */
     font-size:larger;
     font-style:italic;
     font-weight: bolder; 
@@ -104,15 +105,16 @@ footer {
 
 .centered-list {
     display: flex;
-    flex-direction: column;
-    align-items:safe;
-    list-style:disc;
+    flex-direction: column; /* Display list items in a column */
+    align-items:safe; /* Center the items horizontally */
+    list-style:disc; /* Remove default list bullets */
     padding: 10px;
 }
 .Myphoto{
     align-self: center;
 }
 
+/* Add this CSS to your styles.css file */
 .language-list {
     list-style: none;
     padding: 0;
@@ -133,21 +135,23 @@ footer {
     height: 20px;
     border-radius: 5px;
     margin-top: 5px;
-    width: 0;
-    transition: width 0.3s ease;
-    overflow: hidden;
+    width: 0; /* Start with a width of 0 */
+    transition: width 0.3s ease; /* Add a smooth transition effect for width changes */
+    overflow: hidden; /* Hide the progress bar initially */
 }
 
 .progress {
     height: 100%;
-    background-color: #007bff;
+    background-color: #007bff; /* Adjust the color as needed */
     border-radius: 5px;
 }
 
+/* Reveal the progress bar on hover */
 .language-list li:hover .progress-bar {
     width: 100%;
-    overflow: visible;
+    overflow: visible; /* Show the progress bar on hover */
 }
+/* Add this CSS to your styles.css file */
 .project {
     background-color: #3a3838;
     border: 1px solid #ddd;
