@@ -1,0 +1,170 @@
+
+body {
+    font-family:cursive;
+    background-color: #292727;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    height:100vh;
+}
+header {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #07070700;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-text {
+    animation: blink 3s infinite; /* Blinking animation with a 1-second duration */
+}
+
+header h4{
+    color: #f0fd5b;
+    text-align:center;
+}
+header h3{
+    font-size:30px;
+}
+
+header h1 {
+    position:relative;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+nav ul {
+    list-style-type:symbols();
+    background-color: #333;
+    padding: 20px;
+    text-align:right;
+}
+
+nav li {
+    display:inline-block;
+    margin-right: 20px;
+    
+}
+
+nav a {
+    text-decoration:solid;
+    color: #86f6e1;
+    font-weight:900;
+    transition: color 0.6s;
+}
+
+nav a:hover{
+    color: #fbff29; /* Change to a highlight color on hover */
+    font-size:larger;
+    font-style:italic;
+    font-weight: bolder; 
+}
+
+
+section {
+    padding: 40px;
+    background-color: #292727;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+list{
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #232121;
+    color: #fff;
+}
+
+.centered-list {
+    display: flex;
+    flex-direction: column; /* Display list items in a column */
+    align-items:safe; /* Center the items horizontally */
+    list-style:disc; /* Remove default list bullets */
+    padding: 10px;
+}
+.Myphoto{
+    align-self: center;
+}
+
+/* Add this CSS to your styles.css file */
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-list li {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.language-name {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 0; /* Start with a width of 0 */
+    transition: width 0.3s ease; /* Add a smooth transition effect for width changes */
+    overflow: hidden; /* Hide the progress bar initially */
+}
+
+.progress {
+    height: 100%;
+    background-color: #007bff; /* Adjust the color as needed */
+    border-radius: 5px;
+}
+
+/* Reveal the progress bar on hover */
+.language-list li:hover .progress-bar {
+    width: 100%;
+    overflow: visible; /* Show the progress bar on hover */
+}
+/* Add this CSS to your styles.css file */
+.project {
+    background-color: #3a3838;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project h2 {
+    font-size: 1.2em;
+    margin-top: 10;
+}
+
+.project p {
+    margin: 0;
+}

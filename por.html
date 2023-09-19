@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <script src="what.js"></script>
+</head> 
+<body class="fade-in">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <audio id="hover-audio">
+                <source src="button-124476.mp3">
+            </audio>
+            <audio id="click-audio">
+                <source src="button-pressed-38129.mp3">
+            </audio>
+        </ul> 
+    </nav>
+
+    <header>
+        <h4 id="top">
+            Hey there , this is
+        </h4>
+        <h1 class="blinking-text">
+            KRISHNA KHARE
+        </h1>
+        <h3>I am a  <span class="typed-text"></span></h3>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed=-new Typed(".typed-text",{
+                strings:["Coder.","Developer.","Learner.","Reader.","Gamer."],
+                typeSpeed:100,
+                backSpeed:100,
+                loop: true
+            })
+        </script>
+        <br><br>
+            <a href="https://www.facebook.com/krishna.khare.71619/ class="social-button">
+                <img src="facebook.png"< alt="Facebook Logo" class="social-icon" width="25" height="25>
+            </a>
+            
+            <a href="kolo.com/" class="social-button">
+                <img src="github-sign.png" alt="GitHub Logo" class="social-icon" width="25" height="25">
+            </a>
+            <a href="https://www.instagram.com/krishna_khare01/" class="social-button">
+                <img src="instagram.png" alt="Instagram Logo" class="social-icon" width="25" height="25">
+            </a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="social-button">
+                <img src="linkedin.png" alt="LinkedIn Logo" class="social-icon"width="25" height="25">
+            </a>
+    </header>
+    <script>
+        const hoverAudio = document.getElementById("hover-audio");
+        const clickAudio = document.getElementById("click-audio");
+        const navLinks = document.querySelectorAll("nav a");
+    
+        navLinks.forEach(link => {
+            link.addEventListener("mouseenter", () => {
+                hoverAudio.play();
+            });
+    
+            link.addEventListener("mouseleave", () => {
+                hoverAudio.pause();
+                hoverAudio.currentTime = 0; // Reset audio to the beginning
+            });
+            link.addEventListener("click",()=>{
+                clickAudio.play();
+            });
+        });
+    </script>
+    <section id="about">
+        <h2>About Me :</h2>
+        <!-- About Me content goes here -->
+        <img src="my img.jpg" alt="My Photo" width="150" height="150">
+        <caption>Hey there this is Krishna Khare ,a 3rd year Computer Science Student.</caption>
+        Motivated and detail-oriented BTech student with a strong aspiration to
+excel in a challenging position as a Front End Developer or Web Developer.
+Demonstrating a profound understanding of cutting-edge technologies and
+an unwavering dedication to designing flawless user experiences, I am
+prepared to utilize my expertise in HTML, CSS, and JavaScript to spearhead
+the development of dynamic and visually mesmerizing websites.<br><br>
+          I have been learning and upgrading myself each and everyday in order to keep myself updated with the latest technologies.
+          I am passionate about the rapidly evolving field of technology and aspire to make a meaningful contribution to the industry. In my third year, I am actively seeking internships and opportunities to gain practical experience, further develop my skills, and work on impactful projects. Ultimately, my goal is to pursue a career in software engineering and continue learning and innovating in the world of technology.
+          <br>
+          <br>
+          
+          
+          Some of the Technologies ,that i have been working on are :
+          <ul class="centered-list">
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>REACT Js</li>
+          <li>BOOTSTRAP</li>
+          <li>PHP</li>
+          <li>MYSQL</li>
+          <li>Node.js</li>
+          <li>JAVA</li>
+          <li>Python</li>
+        </ul>
+        <ul class="language-list">
+            <h4>Languages I speak:</h4>
+            <li>
+                <span class="language-name">English</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%;"></div>
+                </div>
+            </li>
+            <li>
+                <span class="language-name">Hindi</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </li>
+            <li>
+                <span class="language-name">Bengali</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <!-- Resume/CV content goes here -->
+        <h3>My Resume :</h3>
+        <a href="/Resume-Krishna.pdf">
+        <button>Download CV</button></a>
+    </section>
+
+    <section id="projects">
+        <!-- Projects content goes here -->
+        <div class="project">
+            <h2>Project 1: Tic Tac Toe Website game</h2>
+            <p>
+                Description: A classic game made on the website with some mesmerizing effects and visuals..
+            </p>
+        </div>
+        <div class="project">
+            <h2>Project 2:To-do shopping list</h2>
+            <p>
+                Description: A simple yet useful React application to create a list and also mark one by one as completed or end.
+            </p>
+        </div>
+        <div class="project">
+            <h2>Project 3:Login & Signup Page</h2>
+            <p>
+            </p>
+        </div>
+        <div class="project">
+            <h2>Project 4:Music Player</h2>
+            <p>
+                Description: A simple music player to import and play music from local directories.
+            </p>
+        </div>
+
+        <!-- Add more project boxes as needed -->
+    </section>
+
+    <section id="contact">
+        <!-- Contact information goes here -->
+        Email id: krishnakhare2003@gmail.com
+        <a href="mailto:krishnakhare2003@gmail.com" class="email-button"><button>Mail me</button></a>
+        <br>
+        Contact No. : 9836609626
+    </section>
+
+    <footer>
+        <p>&copy; Krishna Khare 2023</p>
+    </footer>
+</body>
+</html>
