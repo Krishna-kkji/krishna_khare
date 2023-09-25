@@ -164,6 +164,15 @@ footer {
     font-size: 1.2em;
     margin-top: 10;
 }
+.video-container {
+    position:relative;
+}
+
+.video {
+    max-width: 40%;
+    height:auto;
+    display:block;
+}
 
 .project p {
     margin: 0;
